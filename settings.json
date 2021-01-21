@@ -1,0 +1,62 @@
+{
+	"title": "Coding Pirates\nAarhus",
+	
+	"colours": {
+		"centre": "#65B891",
+		"background": "#FFFFFF",
+
+		"month1": "#B5FFE1",
+		"month2": "#93E5AB",
+
+		"activities": "#CCC7B9",
+		"holidays": "#E2D4BA",
+		"planning": "#EAF9D9",
+
+		"events": "#65B891"
+	},
+
+	"data": {
+		"months": [
+			"Januar",
+			"Februar",
+			"Marts",
+			"April",
+			"Maj",
+			"Juni",
+			"Juli",
+			"August",
+			"September",
+			"Oktober",
+			"November",
+			"December"
+		],
+		"month_weights": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+		"activities": [
+			"Planlægning",
+			"Klubaftener",
+			"Vinterferie",
+			"Klubaftener",
+			"Påskeferie",
+			"Klubaftener",
+			"Sommerferie",
+			"Planlægning",
+			"Klubaftener",
+			"Efterårsferie",
+			"Klubaftener",
+			"Juleferie"
+		],
+		"activity_weights": [3, 2, 1, 7, 1, 4, 13, 3, 6, 1, 6, 5],
+		"activity_categories":["planning", "activities", "holidays",
+								"activities", "holidays", "activities",
+								"holidays", "planning", "activities",
+								"holidays", "activities", "holidays"]
+
+	},
+
+	"layout": {
+		"size": 5,
+		"width": 1,
+		"offset": 0.01923,
+		"event_adjustment": 0.5
+	}
+}
