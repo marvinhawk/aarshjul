@@ -49,7 +49,14 @@ def draw_plot(settings, events, out_file):
 
     params = settings['layout']
     colours = settings['colours']
-    data = settings['data']
+    months = settings['months']
+
+    # Extract data from activities.
+    activity_names = [i['name'] for i in settings['activities']]
+    activity_weights = [i['week_duration'] for i in settings['activities']]
+    activity_categories = [i['category'] for i in settings['activities']]
+
+
 
     fig, ax = plt.subplots()
 
@@ -69,12 +76,12 @@ def draw_plot(settings, events, out_file):
 
     # Activities plot
     #draw_layer() #TODO
-    act_wedges, act_labels = ax.pie(data['activity_weights'],
-                                    labels=data['activities'],
+    act_wedges, act_labels = ax.pie(activity_weights,
+                                    labels=activity_names,
                                     radius=params['size'] - params['width'],
-                                    colors=[colours[c] for c in data['activity_categories']],
+                                    colors=[colours[c] for c in activity_categories],
                                     wedgeprops=dict(width=params['width'], edgecolor=colours['background']),
-                                    textprops=dict(va='center', rotation_mode='anchor', size=14, color='black'),
+                                    textprops=dict(va='center', rotation_mode='anchor', size=14, color=colours['text_contrast']),
                                     startangle=90 - params['offset'] * 360,
                                     counterclock=False,
                                     labeldistance=0.87,
@@ -91,8 +98,8 @@ def draw_plot(settings, events, out_file):
     # Calendar plot
     #draw_layer() #TODO
 
-    cal_wedges, cal_labels = ax.pie(data['month_weights'],
-                                    labels=data['months'],
+    cal_wedges, cal_labels = ax.pie(months['weights'],
+                                    labels=months['names'],
                                     radius=params['size'] - params['width'] * 2,
                                     colors=[colours['month1'], colours['month2']],
                                     wedgeprops=dict(width=params['width']/2, edgecolor=colours['background']),

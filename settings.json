@@ -2,8 +2,10 @@
 	"title": "Coding Pirates\nAarhus",
 	
 	"colours": {
+
 		"centre": "#65B891",
 		"background": "#FFFFFF",
+		"text_contrast": "#333333",
 
 		"month1": "#B5FFE1",
 		"month2": "#93E5AB",
@@ -15,8 +17,25 @@
 		"events": "#65B891"
 	},
 
-	"data": {
-		"months": [
+
+	"activities": [
+		{"name": "Planlægning", "week_duration": 3, "category": "planning"},
+		{"name": "Klubaftener", "week_duration": 2, "category": "activities"},
+		{"name": "Vinterferie", "week_duration": 1, "category": "holidays"},
+		{"name": "Klubaftener", "week_duration": 7, "category": "activities"},
+		{"name": "Påskeferie", "week_duration": 1, "category": "holidays"},
+		{"name": "Klubaftener", "week_duration": 4, "category": "activities"},
+		{"name": "Sommerferie", "week_duration": 13, "category": "holidays"},
+		{"name": "Planlægning", "week_duration": 3, "category": "planning"},
+		{"name": "Klubaftener", "week_duration": 6,"category": "activities"},
+		{"name": "Efterårsferie", "week_duration": 1, "category": "holidays"},
+		{"name": "Klubaftener", "week_duration": 6, "category": "activities"},
+		{"name": "Juleferie", "week_duration": 5, "category": "holidays"}
+	],
+
+	"months": {
+
+		"names": [
 			"Januar",
 			"Februar",
 			"Marts",
@@ -30,26 +49,7 @@
 			"November",
 			"December"
 		],
-		"month_weights": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-		"activities": [
-			"Planlægning",
-			"Klubaftener",
-			"Vinterferie",
-			"Klubaftener",
-			"Påskeferie",
-			"Klubaftener",
-			"Sommerferie",
-			"Planlægning",
-			"Klubaftener",
-			"Efterårsferie",
-			"Klubaftener",
-			"Juleferie"
-		],
-		"activity_weights": [3, 2, 1, 7, 1, 4, 13, 3, 6, 1, 6, 5],
-		"activity_categories":["planning", "activities", "holidays",
-								"activities", "holidays", "activities",
-								"holidays", "planning", "activities",
-								"holidays", "activities", "holidays"]
+		"weights": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 	},
 
