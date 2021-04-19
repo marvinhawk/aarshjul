@@ -3,18 +3,18 @@
 	
 	"colours": {
 
-		"centre": "#65B891",
+		"centre": "#00AEEF",
 		"background": "#FFFFFF",
 		"text_contrast": "#333333",
 
-		"month1": "#B5FFE1",
-		"month2": "#93E5AB",
+		"month1": "#dedfe0",
+		"month2": "#6d6e71",
 
-		"activities": "#CCC7B9",
-		"holidays": "#E2D4BA",
-		"planning": "#EAF9D9",
+		"activities": "#ff9900",
+		"holidays": "#00AEEF",
+		"planning": "#ffff00",
 
-		"events": "#65B891"
+		"events": "#00AEEF"
 	},
 
 
